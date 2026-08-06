@@ -1,254 +1,257 @@
-/* estilos.css */
+/* ===========================
+   RESET
+=========================== */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f5f5f5;
-  color: #333;
+body{
+    font-family:Arial,sans-serif;
+    line-height:1.6;
+    background:#f5f5f5;
+    color:#333;
 }
 
-/* HEADER */
-
-header {
-  background-color: #111827;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.2rem 5%;
-  flex-wrap: wrap;
+section{
+    padding:4rem 5%;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
+h2{
+    text-align:center;
+    margin-bottom:2rem;
+    font-size:2rem;
 }
 
-.menu {
-  display: flex;
-  gap: 1.5rem;
-  list-style: none;
+/* ===========================
+   HEADER
+=========================== */
+
+.header{
+    background:#111827;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1.2rem 5%;
+    flex-wrap:wrap;
 }
 
-.menu a {
-  color: white;
-  text-decoration: none;
-  transition: 0.3s;
+.logo{
+    font-size:1.5rem;
+    font-weight:bold;
 }
 
-.menu a:hover {
-  color: #60a5fa;
+/* ===========================
+   NAV
+=========================== */
+
+.nav__menu{
+    display:flex;
+    list-style:none;
+    gap:1.5rem;
 }
 
-/* BANNER */
-
-.banner {
-  min-height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  padding: 4rem 5%;
-  background: linear-gradient(to right, #111827, #1e3a8a);
-  color: white;
+.nav__link{
+    color:#fff;
+    text-decoration:none;
+    transition:.3s;
 }
 
-.banner-texto {
-  flex: 1;
+.nav__link:hover{
+    color:#60a5fa;
 }
 
-.banner h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+/* ===========================
+   BANNER
+=========================== */
+
+.banner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:2rem;
+    min-height:90vh;
+    padding:4rem 5%;
+    color:#fff;
+    background:linear-gradient(to right,#111827,#1e3a8a);
 }
 
-.banner p {
-  margin-bottom: 1.5rem;
-  font-size: 1.1rem;
+.banner__content{
+    flex:1;
 }
 
-.banner img {
-  width: 45%;
-  border-radius: 1rem;
-  max-width: 100%;
+.banner__title{
+    font-size:3rem;
+    margin-bottom:1rem;
 }
 
-.btn {
-  display: inline-block;
-  padding: 0.8rem 1.5rem;
-  background-color: #60a5fa;
-  color: white;
-  text-decoration: none;
-  border-radius: 0.5rem;
-  transition: 0.3s;
+.banner__text{
+    margin-bottom:1.5rem;
 }
 
-.btn:hover {
-  background-color: #3b82f6;
+.banner__image{
+    width:45%;
+    max-width:100%;
+    border-radius:16px;
 }
 
-/* SEÇÕES */
+/* ===========================
+   BOTÃO
+=========================== */
 
-section {
-  padding: 4rem 5%;
+.button{
+    display:inline-block;
+    padding:1rem 2rem;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
 }
 
-h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-  font-size: 2rem;
+.button--primary{
+    background:#60a5fa;
+    color:#fff;
 }
 
-/* SOBRE */
-
-.sobre p {
-  text-align: center;
-  max-width: 800px;
-  margin: auto;
+.button--primary:hover{
+    background:#2563eb;
 }
 
-.valores {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 2rem;
-  flex-wrap: wrap;
+/* ===========================
+   CARDS
+=========================== */
+
+.card{
+    background:#fff;
+    padding:2rem;
+    border-radius:16px;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
 }
 
-.card {
-  background-color: white;
-  padding: 2rem;
-  border-radius: 1rem;
-  width: 250px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+.card__title{
+    margin-bottom:1rem;
 }
 
-/* SERVIÇOS */
-
-.grid-servicos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+.card__author{
+    margin-top:1rem;
+    font-weight:bold;
 }
 
-.servico {
-  background-color: white;
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: 0.3s;
+.card--service:hover{
+    transform:translateY(-5px);
+    transition:.3s;
 }
 
-.servico:hover {
-  transform: translateY(-5px);
+/* ===========================
+   VALORES
+=========================== */
+
+.values{
+    display:flex;
+    justify-content:center;
+    gap:2rem;
+    flex-wrap:wrap;
+    margin-top:2rem;
 }
 
-/* DEPOIMENTOS */
+/* ===========================
+   SERVIÇOS
+=========================== */
 
-.comentarios {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-  justify-content: center;
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:2rem;
 }
 
-.comentario {
-  background-color: white;
-  padding: 2rem;
-  border-radius: 1rem;
-  width: 300px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+/* ===========================
+   DEPOIMENTOS
+=========================== */
+
+.testimonials{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:2rem;
 }
 
-/* CONTATO */
+/* ===========================
+   CONTATO
+=========================== */
 
-.contato-container {
-  display: flex;
-  gap: 3rem;
-  flex-wrap: wrap;
-  justify-content: center;
+.contact{
+    display:flex;
+    gap:3rem;
+    flex-wrap:wrap;
 }
 
-.info-contato {
-  flex: 1;
-  min-width: 250px;
+.contact__info,
+.contact__form{
+    flex:1;
+    min-width:250px;
 }
 
-form {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  min-width: 250px;
+.contact__form{
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
 }
 
-input,
-textarea {
-  padding: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 0.5rem;
-  width: 100%;
+.form__input,
+.form__textarea{
+    width:100%;
+    padding:1rem;
+    border:1px solid #ccc;
+    border-radius:8px;
 }
 
-textarea {
-  min-height: 150px;
-  resize: vertical;
+.form__textarea{
+    resize:vertical;
+    min-height:150px;
 }
 
-button {
-  padding: 1rem;
-  border: none;
-  background-color: #1e3a8a;
-  color: white;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  transition: 0.3s;
+/* ===========================
+   FOOTER
+=========================== */
+
+.footer{
+    background:#111827;
+    color:#fff;
+    text-align:center;
+    padding:1rem;
 }
 
-button:hover {
-  background-color: #2563eb;
-}
+/* ===========================
+   RESPONSIVO
+=========================== */
 
-/* FOOTER */
+@media(max-width:768px){
 
-footer {
-  background-color: #111827;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-}
+    .header{
+        flex-direction:column;
+    }
 
-/* RESPONSIVIDADE */
+    .nav__menu{
+        flex-direction:column;
+        width:100%;
+        text-align:center;
+        margin-top:1rem;
+    }
 
-@media (max-width: 768px) {
+    .banner{
+        flex-direction:column;
+        text-align:center;
+    }
 
-  .banner {
-    flex-direction: column;
-    text-align: center;
-  }
+    .banner__image{
+        width:100%;
+    }
 
-  .banner img {
-    width: 100%;
-  }
+    .banner__title{
+        font-size:2.2rem;
+    }
 
-  .menu {
-    flex-direction: column;
-    width: 100%;
-    margin-top: 1rem;
-    text-align: center;
-  }
-
-  header {
-    flex-direction: column;
-  }
-
-  .banner h1 {
-    font-size: 2.2rem;
-  }
 }

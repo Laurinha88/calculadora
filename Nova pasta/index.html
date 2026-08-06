@@ -1,174 +1,233 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Creative Agency</title>
-  <link rel="stylesheet" href="style.css"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência Criativa Web</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
- 
-  <header>
-    <div class="logo">Creative Agency</div>
+    <!-- HEADER -->
+    <header class="header">
 
-    <nav>
-      <ul class="menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#sobre">Sobre Nós</a></li>
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#depoimentos">Depoimentos</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+        <div class="logo">Creative Agency</div>
 
- 
-  <section id="home" class="banner">
-    <div class="banner-texto">
-      <h1>Transformamos ideias em experiências digitais</h1>
-      <p>
-        Criamos soluções modernas, criativas e profissionais para destacar sua marca no mercado.
-      </p>
-      <a href="#servicos" class="btn">Conheça nossos serviços</a>
-    </div>
+        <nav class="nav">
+            <ul class="nav__menu">
+                <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
+                <li class="nav__item"><a class="nav__link" href="#sobre">Sobre Nós</a></li>
+                <li class="nav__item"><a class="nav__link" href="#servicos">Serviços</a></li>
+                <li class="nav__item"><a class="nav__link" href="#depoimentos">Depoimentos</a></li>
+                <li class="nav__item"><a class="nav__link" href="#contato">Contato</a></li>
+            </ul>
+        </nav>
 
-    <img 
-      src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800"
-      srcset="
-        https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400 400w,
-        https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800 800w
-      "
-      sizes="(max-width: 768px) 100vw, 50vw"
-      alt="Equipe trabalhando"
-    >
-  </section>
+    </header>
 
+    <!-- BANNER -->
+    <section class="banner" id="home">
 
-  <section id="sobre" class="sobre">
-    <h2>Sobre Nós</h2>
-    <p>
-      Somos uma agência criativa especializada em design, branding e desenvolvimento web.
-      Nosso objetivo é ajudar empresas a crescerem no ambiente digital com inovação,
-      criatividade e tecnologia.
-    </p>
+        <div class="banner__content">
 
-    <div class="valores">
-      <div class="card">
-        <h3>Inovação</h3>
-        <p>Buscamos sempre soluções modernas e eficientes.</p>
-      </div>
+            <h1 class="banner__title">
+                Transformamos ideias em resultados digitais
+            </h1>
 
-      <div class="card">
-        <h3>Criatividade</h3>
-        <p>Transformamos ideias em projetos únicos e impactantes.</p>
-      </div>
+            <p class="banner__text">
+                Somos uma agência criativa especializada em design,
+                desenvolvimento web e marketing digital.
+            </p>
 
-      <div class="card">
-        <h3>Qualidade</h3>
-        <p>Entregamos resultados profissionais e personalizados.</p>
-      </div>
-    </div>
-  </section>
+            <a href="#contato" class="button button--primary">
+                Solicitar Orçamento
+            </a>
 
+        </div>
 
-  <section id="servicos" class="servicos">
-    <h2>Nossos Serviços</h2>
+        <img
+            class="banner__image"
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800"
+            srcset="
+                https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400 400w,
+                https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800 800w"
+            sizes="(max-width:768px) 100vw, 50vw"
+            alt="Equipe trabalhando">
 
-    <div class="grid-servicos">
+    </section>
 
-      <div class="servico">
-        <h3>Design Gráfico</h3>
-        <p>Criação de artes profissionais para marcas e empresas.</p>
-      </div>
+    <!-- SOBRE -->
+    <section id="sobre">
 
-      <div class="servico">
-        <h3>Desenvolvimento Web</h3>
-        <p>Sites modernos, rápidos e responsivos.</p>
-      </div>
+        <h2>Sobre Nós</h2>
 
-      <div class="servico">
-        <h3>Branding</h3>
-        <p>Construção de identidade visual forte e estratégica.</p>
-      </div>
-
-      <div class="servico">
-        <h3>Marketing Digital</h3>
-        <p>Estratégias para aumentar sua presença online.</p>
-      </div>
-
-      <div class="servico">
-        <h3>UX/UI Design</h3>
-        <p>Experiências digitais intuitivas e atraentes.</p>
-      </div>
-
-      <div class="servico">
-        <h3>Social Media</h3>
-        <p>Gestão de redes sociais e criação de conteúdo.</p>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="depoimentos" class="depoimentos">
-    <h2>Depoimentos</h2>
-
-    <div class="comentarios">
-
-      <div class="comentario">
-        <p>
-          "A agência superou nossas expectativas. O site ficou incrível!"
+        <p style="text-align:center; max-width:800px; margin:auto;">
+            Nossa missão é desenvolver soluções digitais modernas,
+            criativas e personalizadas para empresas de todos os
+            segmentos.
         </p>
-        <h4>- Mariana Souza</h4>
-      </div>
 
-      <div class="comentario">
-        <p>
-          "Equipe extremamente profissional e criativa."
-        </p>
-        <h4>- Carlos Mendes</h4>
-      </div>
+        <div class="values">
 
-      <div class="comentario">
-        <p>
-          "Nossa marca ganhou muito mais visibilidade após o projeto."
-        </p>
-        <h4>- Fernanda Lima</h4>
-      </div>
+            <div class="card card--value">
+                <h3 class="card__title">Inovação</h3>
+                <p class="card__text">
+                    Buscamos sempre soluções modernas e eficientes.
+                </p>
+            </div>
 
-    </div>
-  </section>
+            <div class="card card--value">
+                <h3 class="card__title">Criatividade</h3>
+                <p class="card__text">
+                    Transformamos ideias em projetos únicos e impactantes.
+                </p>
+            </div>
 
+            <div class="card card--value">
+                <h3 class="card__title">Qualidade</h3>
+                <p class="card__text">
+                    Entregamos resultados profissionais e personalizados.
+                </p>
+            </div>
 
-  <section id="contato" class="contato">
-    <h2>Contato</h2>
+        </div>
 
-    <div class="contato-container">
+    </section>
 
-      <div class="info-contato">
-        <p><strong>Endereço:</strong> Av. Paulista, 1000 - São Paulo</p>
-        <p><strong>Telefone:</strong> (11) 99999-9999</p>
-        <p><strong>E-mail:</strong> contato@creativeagency.com</p>
-      </div>
+    <!-- SERVIÇOS -->
+    <section id="servicos">
 
-      <form>
-        <input type="text" placeholder="Seu nome" required>
+        <h2>Serviços</h2>
 
-        <input type="email" placeholder="Seu e-mail" required>
+        <div class="services">
 
-        <textarea placeholder="Sua mensagem" required></textarea>
+            <article class="card card--service">
+                <h3 class="card__title">Design Gráfico</h3>
+                <p class="card__text">
+                    Criação de artes profissionais para marcas e empresas.
+                </p>
+            </article>
 
-        <button type="submit">Enviar</button>
-      </form>
+            <article class="card card--service">
+                <h3 class="card__title">Desenvolvimento Web</h3>
+                <p class="card__text">
+                    Sites modernos, rápidos e responsivos.
+                </p>
+            </article>
 
-    </div>
-  </section>
+            <article class="card card--service">
+                <h3 class="card__title">Branding</h3>
+                <p class="card__text">
+                    Construção de identidade visual forte e estratégica.
+                </p>
+            </article>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2026 Creative Agency - Todos os direitos reservados.</p>
-  </footer>
+            <article class="card card--service">
+                <h3 class="card__title">Marketing Digital</h3>
+                <p class="card__text">
+                    Estratégias para aumentar sua presença online.
+                </p>
+            </article>
+
+            <article class="card card--service">
+                <h3 class="card__title">UX/UI Design</h3>
+                <p class="card__text">
+                    Experiências digitais intuitivas e atraentes.
+                </p>
+            </article>
+
+            <article class="card card--service">
+                <h3 class="card__title">Social Media</h3>
+                <p class="card__text">
+                    Gestão de redes sociais e criação de conteúdo.
+                </p>
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section id="depoimentos">
+
+        <h2>Depoimentos</h2>
+
+        <div class="testimonials">
+
+            <article class="card card--testimonial">
+                <p class="card__text">
+                    "A agência superou nossas expectativas. O site ficou incrível!"
+                </p>
+                <h4 class="card__author">- Mariana Souza</h4>
+            </article>
+
+            <article class="card card--testimonial">
+                <p class="card__text">
+                    "Equipe extremamente profissional e criativa."
+                </p>
+                <h4 class="card__author">- Carlos Mendes</h4>
+            </article>
+
+            <article class="card card--testimonial">
+                <p class="card__text">
+                    "Nossa marca ganhou muito mais visibilidade após o projeto."
+                </p>
+                <h4 class="card__author">- Fernanda Lima</h4>
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato">
+
+        <h2>Contato</h2>
+
+        <div class="contact">
+
+            <div class="contact__info">
+                <p><strong>Endereço:</strong> Av. Paulista, 1000 - São Paulo</p>
+                <p><strong>Telefone:</strong> (11) 99999-9999</p>
+                <p><strong>E-mail:</strong> contato@creativeagency.com</p>
+            </div>
+
+            <form class="contact__form">
+
+                <input
+                    class="form__input"
+                    type="text"
+                    placeholder="Seu nome"
+                    required>
+
+                <input
+                    class="form__input"
+                    type="email"
+                    placeholder="Seu e-mail"
+                    required>
+
+                <textarea
+                    class="form__textarea"
+                    placeholder="Sua mensagem"
+                    required></textarea>
+
+                <button
+                    class="button button--primary"
+                    type="submit">
+                    Enviar
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 Creative Agency. Laura Schiavi.</p>
+    </footer>
 
 </body>
 </html>
